@@ -1,0 +1,19 @@
+// Project: LED Blink
+// Description: Toggling an LED on Pin 3
+// Author: Masoumeh
+
+
+int led=3;                    //LED connected to pin 3.
+
+void setup() {
+  // initialize digital pin led as an output.
+  pinMode(led,OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(led,HIGH);    // turn the LED on (HIGH is the voltage level)
+  delay(1000);               // wait for a second
+  digitalWrite(led,LOW);     // turn the LED off by making the voltage LOW
+  delay(200);                // wait for a second
+}
